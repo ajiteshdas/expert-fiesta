@@ -36,7 +36,6 @@ def show_sample_download():
             help="Grab a copy of the sample and tweak it if you like."
         )
 
-# --- In your main layout, replace your current uploader logic with this ---
 st.subheader("Try it now")
 colA, colB = st.columns([1,1])
 
@@ -46,17 +45,12 @@ with colA:
 with colB:
     show_sample_download()
 
-uploaded = st.file_uploader("…or upload your own CSV", type=["csv"])
-
-if use_sample:
-    df = load_sample()
-    st.caption("Using built‑in sample data.")
-elif uploaded is not None:
+uploaded = st.file_uploader("Upload a CSV (columns: deal_id, stage, date, duration_min, transcript)", type=["csv"])
+if uploaded:
     df = pd.read_csv(uploaded)
-    st.caption("Using your uploaded file.")
 else:
-    st.info("Choose **Use sample data** or upload a CSV to continue.")
-    st.stop()
+    st.caption("No file uploaded — using sample data.")
+    df = load_sample()
 
 # Basic hygiene
 required_cols = {"deal_id","stage","date","duration_min","transcript"}
