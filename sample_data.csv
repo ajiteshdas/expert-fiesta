@@ -1,0 +1,31 @@
+deal_id,stage,date,duration_min,transcript
+1000,Lead,2025-08-12,26,They may cancel if we cannot meet the timeline. Strong objections about scope.
+1000,Proposal,2025-07-02,11,No decision maker on the call. They asked to push back the meeting.
+1001,Qualified,2025-08-04,33,Legal is reviewing the MSA. Risk seems low if we pass security.
+1001,Proposal,2025-07-14,43,No decision maker on the call. They asked to push back the meeting.
+1001,Lead,2025-06-30,42,Mixed feedback: great fit but executive raised concerns about ROI.
+1002,Negotiation,2025-07-27,16,They mentioned a competitor but like our integration. Need security review.
+1002,Qualified,2025-08-01,17,Some concerns about budget this quarter; might delay purchase until Q4.
+1002,Qualified,2025-07-19,19,They stalled after the proposal. Said they need more time and budget approval.
+1003,Closed Won,2025-07-23,44,They mentioned a competitor but like our integration. Need security review.
+1003,Negotiation,2025-07-09,20,They may cancel if we cannot meet the timeline. Strong objections about scope.
+1003,Proposal,2025-07-12,46,Positive feedback; they want to move forward. Next steps agreed.
+1004,Lead,2025-08-04,35,Positive feedback; they want to move forward. Next steps agreed.
+1004,Qualified,2025-07-15,29,They mentioned a competitor but like our integration. Need security review.
+1004,Closed Won,2025-07-17,51,No decision maker on the call. They asked to push back the meeting.
+1005,Lead,2025-06-30,26,Positive feedback; they want to move forward. Next steps agreed.
+1005,Proposal,2025-07-29,24,Legal is reviewing the MSA. Risk seems low if we pass security.
+1005,Qualified,2025-06-30,53,No decision maker on the call. They asked to push back the meeting.
+1006,Negotiation,2025-07-05,23,Excellent tone; clear champion identified. Procurement next week.
+1006,Qualified,2025-07-09,43,Some concerns about budget this quarter; might delay purchase until Q4.
+1006,Qualified,2025-07-26,41,Legal is reviewing the MSA. Risk seems low if we pass security.
+1007,Qualified,2025-07-24,32,They mentioned a competitor but like our integration. Need security review.
+1007,Negotiation,2025-07-23,28,They stalled after the proposal. Said they need more time and budget approval.
+1007,Lead,2025-08-01,25,Great call overall. They loved the demo and want pricing by Friday.
+1008,Proposal,2025-07-17,49,They mentioned a competitor but like our integration. Need security review.
+1008,Qualified,2025-07-12,55,Excellent tone; clear champion identified. Procurement next week.
+1008,Qualified,2025-08-09,10,Some concerns about budget this quarter; might delay purchase until Q4.
+1009,Negotiation,2025-07-23,50,Mixed feedback: great fit but executive raised concerns about ROI.
+1009,Negotiation,2025-07-02,59,They mentioned a competitor but like our integration. Need security review.
+1009,Qualified,2025-07-31,27,Excellent tone; clear champion identified. Procurement next week.
+1010,Negotiation,2025-06-29,31,They may cancel if we cannot meet the timeline. Strong objections about scope.
