@@ -23,6 +23,7 @@ st.link_button("📬 Contact me", "mailto:ajiteshdas@gmail.com")
 
 @st.cache_data
 def load_sample():
+    # assumes sample_data.csv is in the same folder as app.py
     return pd.read_csv("sample_data.csv")
 
 def show_sample_download():
@@ -35,12 +36,27 @@ def show_sample_download():
             help="Grab a copy of the sample and tweak it if you like."
         )
 
-uploaded = st.file_uploader("Upload a CSV (columns: deal_id, stage, date, duration_min, transcript)", type=["csv"])
-if uploaded:
-    df = pd.read_csv(uploaded)
-else:
-    st.caption("No file uploaded — using sample data.")
+# --- In your main layout, replace your current uploader logic with this ---
+st.subheader("Try it now")
+colA, colB = st.columns([1,1])
+
+with colA:
+    use_sample = st.button("▶️ Use sample data")
+
+with colB:
+    show_sample_download()
+
+uploaded = st.file_uploader("…or upload your own CSV", type=["csv"])
+
+if use_sample:
     df = load_sample()
+    st.caption("Using built‑in sample data.")
+elif uploaded is not None:
+    df = pd.read_csv(uploaded)
+    st.caption("Using your uploaded file.")
+else:
+    st.info("Choose **Use sample data** or upload a CSV to continue.")
+    st.stop()
 
 # Basic hygiene
 required_cols = {"deal_id","stage","date","duration_min","transcript"}
