@@ -1,7 +1,7 @@
 
 # Deal Risk Radar (Streamlit)
 
-A tiny, HR-friendly demo that shows how AI can surface risk in sales conversations and deals.
+A demo that shows how AI can surface risk in sales conversations and deals.
 
 ## What it does
 - Upload a CSV of call transcripts/notes and basic deal fields
