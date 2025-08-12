@@ -25,6 +25,16 @@ st.link_button("📬 Contact me", "mailto:ajiteshdas@gmail.com")
 def load_sample():
     return pd.read_csv("sample_data.csv")
 
+def show_sample_download():
+    with open("sample_data.csv", "rb") as f:
+        st.download_button(
+            "📥 Download sample CSV",
+            data=f,
+            file_name="sample_data.csv",
+            mime="text/csv",
+            help="Grab a copy of the sample and tweak it if you like."
+        )
+
 uploaded = st.file_uploader("Upload a CSV (columns: deal_id, stage, date, duration_min, transcript)", type=["csv"])
 if uploaded:
     df = pd.read_csv(uploaded)
