@@ -154,4 +154,4 @@ with st.expander("Details"):
 """)
 
 st.sidebar.markdown("---")
-st.sidebar.caption("👋 Built for quick HR/PM demos. Upload your own CSV to try it with your data.")
+st.sidebar.caption("👋 Built for quick PM demos. Upload your own CSV to try it with your data.")
